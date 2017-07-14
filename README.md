@@ -1,5 +1,9 @@
 # Trekker
 
+[![Build Status](https://travis-ci.org/awkward/Tatsi.svg?branch=master)](https://travis-ci.org/awkward/Tatsi)
+[![Contact](https://img.shields.io/badge/contact-madeawkward-blue.svg?style=flat)](https://twitter.com/madeawkward)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A wrapper to easily swap out different analytics services or to support multiple analytics services at once. Trekker works best with event based analytics services like Mixpanel, Amplitude, Firebase, and Answers by Crashlytics.
 
 ### Introduction

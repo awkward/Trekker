@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0C7FAD3A1BECBE9D0049C011"
+               BuildableName = "TrekkerTests.xctest"
+               BlueprintName = "TrekkerTests"
+               ReferencedContainer = "container:Trekker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0C7FAD311BECBE9D0049C011"
+            BuildableName = "Trekker.framework"
+            BlueprintName = "Trekker"
+            ReferencedContainer = "container:Trekker.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
