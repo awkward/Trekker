@@ -20,18 +20,18 @@ Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used man
 
 ### Getting started
 
-### Add a submodule. 
+### Add a submodule
 
-1. Add Trekker as a submodule to your git project.
-2. Drag `Trekker.xcodeproj` into the project navigator.
-3. Go to the project settings and select the settings of the target you want to add Trekker too.
+1. Add Trekker as a submodule to your git project
+2. Drag `Trekker.xcodeproj` into the project navigator
+3. Go to the project settings and select the settings of the target you want to add Trekker too
 4. Click plus beneath the `Embedded Binaries` and select the `Trekker` framework in the Trekker project
-5. Follow the steps below to add an analytics service (`TrekkerService`).
+5. Follow the steps below to add an analytics service (`TrekkerService`)
 
 ### Manually
 
-1. Copy all Swift files from the Trekker directory to the project in your navigator.
-2. Follow the steps below to add an analytics service (`TrekkerService`).
+1. Copy all Swift files from the Trekker directory to the project in your navigator
+2. Follow the steps below to add an analytics service (`TrekkerService`)
 
 ### Adding a TrekkerService
 
