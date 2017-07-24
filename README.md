@@ -14,7 +14,7 @@ Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used man
 
 - Event tracking
 - Profile tracking
-- Timed event tracking (event tracking met duration)
+- Timed event tracking (event tracking with duration)
 - Event Super Properties
 - Push notification registration
 
