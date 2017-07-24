@@ -6,11 +6,11 @@
 
 A wrapper to easily swap out different analytics services or to support multiple analytics services at once. Trekker works best with event based analytics services like Mixpanel, Amplitude, Firebase, and Answers by Crashlytics.
 
-### Introduction
+## Introduction
 
 Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used many different analytics services for our iOS reddit client called <a href="https://beamreddit.com/" target="_blank">Beam</a>. We weren't quite sure which service we wanted to use, so we wanted to make it easy to implement them all and switch between services on the fly. Trekker was born. We welcome you to use Trekker for your own projects.
 
-### Features
+## Features
 
 - Event tracking
 - Profile tracking
@@ -18,9 +18,9 @@ Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used man
 - Event Super Properties
 - Push notification registration
 
-### Getting started
+## Getting started
 
-### Add a submodule
+### As a submodule
 
 1. Add Trekker as a submodule to your git project
 2. Drag `Trekker.xcodeproj` into the project navigator
@@ -33,7 +33,7 @@ Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used man
 1. Copy all Swift files from the Trekker directory to the project in your navigator
 2. Follow the steps below to add an analytics service (`TrekkerService`)
 
-### Adding a TrekkerService
+## Adding a TrekkerService
 
 TrekkerService is the protocol that is implemented for every analytics service that is fed into Trekker.
 
@@ -56,15 +56,15 @@ Now you can implement the following protocols for the features the analytics ser
 - `TrekkerUserProfileAnalytics` for services that support user profiles
 - `TrekkerEventSuperPropertiesAnalytics` for services that support super properties. Properties that are included with every event.
 
-### Documentation
+## Documentation
 
 > We're trying to keep our documentation as updated as possible. Here you can find more information on Trekker.
 
-### License
+## License
 
 > Trekker is available under the MIT license. See the LICENSE file for more info.
 
-### Links
+## Links
 
   - <a href="https://awkward.co/" target="_blank">Awkward</a>
   - <a href="https://beamreddit.com/" target="_blank">Beam</a>
