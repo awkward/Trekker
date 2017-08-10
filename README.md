@@ -1,8 +1,18 @@
-# Trekker
-
-[![Build Status](https://travis-ci.org/awkward/Tatsi.svg?branch=master)](https://travis-ci.org/awkward/Tatsi)
-[![Contact](https://img.shields.io/badge/contact-madeawkward-blue.svg?style=flat)](https://twitter.com/madeawkward)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<h1 align="center">
+  <img src="Docs/icon.png" width="136" alt="icon"><br>
+  Trekker<br>
+  <p align="center">
+  <a href="https://travis-ci.org/awkward/Trekker">
+    <img src="https://travis-ci.org/awkward/Trekker.svg?branch=master" alt="Build Status">
+  </a>
+  <a href="https://twitter.com/madeawkward">
+    <img src="https://img.shields.io/badge/contact-madeawkward-blue.svg?style=flat" alt="Contact">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+</p>
+</h1>
 
 A wrapper to easily swap out different analytics services or to support multiple analytics services at once. Trekker works best with event based analytics services like Mixpanel, Amplitude, Firebase, and Answers by Crashlytics.
 
@@ -37,7 +47,7 @@ Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used man
 
 TrekkerService is the protocol that is implemented for every analytics service that is fed into Trekker.
 
-Adding a Trekker is simple. 
+Adding a Trekker is simple.
 First add the framework of the analytics service to your app. There are ready build implementations for some services, see the example services folder.
 
 If the service doesn't have a ready implementation, a new subclass of NSObject should be made. It should implement the TrekkerService protocol. This requires implementing the following properties:
