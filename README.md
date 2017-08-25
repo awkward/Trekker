@@ -1,43 +1,53 @@
-# Trekker
-
-[![Build Status](https://travis-ci.org/awkward/Tatsi.svg?branch=master)](https://travis-ci.org/awkward/Tatsi)
-[![Contact](https://img.shields.io/badge/contact-madeawkward-blue.svg?style=flat)](https://twitter.com/madeawkward)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<h1 align="center">
+  <img src="Docs/icon.png" width="136" alt="icon"><br>
+  Trekker<br>
+  <p align="center">
+  <a href="https://travis-ci.org/awkward/Trekker">
+    <img src="https://travis-ci.org/awkward/Trekker.svg?branch=master" alt="Build Status">
+  </a>
+  <a href="https://twitter.com/madeawkward">
+    <img src="https://img.shields.io/badge/contact-madeawkward-blue.svg?style=flat" alt="Contact">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+</p>
+</h1>
 
 A wrapper to easily swap out different analytics services or to support multiple analytics services at once. Trekker works best with event based analytics services like Mixpanel, Amplitude, Firebase, and Answers by Crashlytics.
 
-### Introduction
+## Introduction
 
 Hi, we're <a href="https://awkward.co/" target="_blank">Awkward</a>. We used many different analytics services for our iOS reddit client called <a href="https://beamreddit.com/" target="_blank">Beam</a>. We weren't quite sure which service we wanted to use, so we wanted to make it easy to implement them all and switch between services on the fly. Trekker was born. We welcome you to use Trekker for your own projects.
 
-### Features
+## Features
 
 - Event tracking
 - Profile tracking
-- Timed event tracking (event tracking met duration)
+- Timed event tracking (event tracking with duration)
 - Event Super Properties
 - Push notification registration
 
-### Getting started
+## Getting started
 
-### Add a submodule. 
+### As a submodule
 
-1. Add Trekker as a submodule to your git project.
-2. Drag `Trekker.xcodeproj` into the project navigator.
-3. Go to the project settings and select the settings of the target you want to add Trekker too.
+1. Add Trekker as a submodule to your git project
+2. Drag `Trekker.xcodeproj` into the project navigator
+3. Go to the project settings and select the settings of the target you want to add Trekker too
 4. Click plus beneath the `Embedded Binaries` and select the `Trekker` framework in the Trekker project
-5. Follow the steps below to add an analytics service (`TrekkerService`).
+5. Follow the steps below to add an analytics service (`TrekkerService`)
 
 ### Manually
 
-1. Copy all Swift files from the Trekker directory to the project in your navigator.
-2. Follow the steps below to add an analytics service (`TrekkerService`).
+1. Copy all Swift files from the Trekker directory to the project in your navigator
+2. Follow the steps below to add an analytics service (`TrekkerService`)
 
-### Adding a TrekkerService
+## Adding a TrekkerService
 
 TrekkerService is the protocol that is implemented for every analytics service that is fed into Trekker.
 
-Adding a Trekker is simple. 
+Adding a Trekker is simple.
 First add the framework of the analytics service to your app. There are ready build implementations for some services, see the example services folder.
 
 If the service doesn't have a ready implementation, a new subclass of NSObject should be made. It should implement the TrekkerService protocol. This requires implementing the following properties:
@@ -56,15 +66,15 @@ Now you can implement the following protocols for the features the analytics ser
 - `TrekkerUserProfileAnalytics` for services that support user profiles
 - `TrekkerEventSuperPropertiesAnalytics` for services that support super properties. Properties that are included with every event.
 
-### Documentation
+## Documentation
 
 > We're trying to keep our documentation as updated as possible. Here you can find more information on Trekker.
 
-### License
+## License
 
 > Trekker is available under the MIT license. See the LICENSE file for more info.
 
-### Links
+## Links
 
   - <a href="https://awkward.co/" target="_blank">Awkward</a>
   - <a href="https://beamreddit.com/" target="_blank">Beam</a>
