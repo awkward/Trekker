@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Trekker"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Easily combine and swap out multiple analytics services on iOS"
 
   # This description is used to generate tags and improve search results.
