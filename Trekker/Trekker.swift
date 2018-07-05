@@ -138,7 +138,7 @@ extension Trekker {
     
     /// The services that implement the `TrekkerEventAnalytics` protocol.
     private var servicesForEventTracking: [TrekkerEventAnalytics] {
-        return self.services.flatMap { (service) -> TrekkerEventAnalytics? in
+        return self.services.compactMap { (service) -> TrekkerEventAnalytics? in
             return service as? TrekkerEventAnalytics
         }
     }
@@ -195,7 +195,7 @@ extension Trekker {
     
     /// The services that implement the `TrekkerTimedEventAnalytics` protocol.
     private var servicesForTimedEventTracking: [TrekkerTimedEventAnalytics] {
-        return self.services.flatMap({ (service) -> TrekkerTimedEventAnalytics? in
+        return self.services.compactMap({ (service) -> TrekkerTimedEventAnalytics? in
             return service as? TrekkerTimedEventAnalytics
         })
     }
@@ -228,7 +228,7 @@ extension Trekker {
     
     /// The services that implement the `TrekkerEventSuperPropertiesAnalytics` protocol.
     private var servicesForEventSuperProperties: [TrekkerEventSuperPropertiesAnalytics] {
-        return self.services.flatMap({ (service) -> TrekkerEventSuperPropertiesAnalytics? in
+        return self.services.compactMap({ (service) -> TrekkerEventSuperPropertiesAnalytics? in
             return service as? TrekkerEventSuperPropertiesAnalytics
         })
     }
@@ -258,7 +258,7 @@ extension Trekker {
     
     /// The services that implement the `TrekkerPushNotificationAnalytics` protocol.
     private var servicesForPushNotifications: [TrekkerPushNotificationAnalytics] {
-        return self.services.flatMap { (service) -> TrekkerPushNotificationAnalytics? in
+        return self.services.compactMap { (service) -> TrekkerPushNotificationAnalytics? in
             return service as? TrekkerPushNotificationAnalytics
         }
     }
@@ -290,7 +290,7 @@ extension Trekker {
     
     /// The services that implement the `TrekkerUserProfileAnalytics` protocol.
     private var servicesForUserProfiles: [TrekkerUserProfileAnalytics] {
-        return self.services.flatMap { (service) -> TrekkerUserProfileAnalytics? in
+        return self.services.compactMap { (service) -> TrekkerUserProfileAnalytics? in
             return service as? TrekkerUserProfileAnalytics
         }
     }
