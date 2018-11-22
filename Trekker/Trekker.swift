@@ -66,9 +66,9 @@ public final class Trekker: NSObject {
         
         if self.automaticStateUpdatingEnabled {
             self.start()
-            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.pauseTracking(_:)), name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.resumeTracking(_:)), name: Notification.Name.UIApplicationDidBecomeActive, object: nil)
-            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.endTracking(_:)), name: Notification.Name.UIApplicationWillTerminate, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.pauseTracking(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.resumeTracking(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(Trekker.endTracking(_:)), name: UIApplication.willTerminateNotification, object: nil)
         }
     }
     
@@ -299,7 +299,7 @@ extension Trekker {
     /// But can contain more information in the `customProperties` property. Any nil items in the User profile should be removed, so be sure to always fill the user profile.
     ///
     /// - Parameter profile: The profile to identify the user with.
-    open func identify(using profile: TrekkerUserProfile) {
+    public func identify(using profile: TrekkerUserProfile) {
         self.servicesForUserProfiles.forEach { (service) in
             service.identify(using: profile)
         }

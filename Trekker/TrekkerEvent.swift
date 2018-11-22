@@ -14,10 +14,10 @@ import Foundation
 open class TrekkerEvent: NSObject {
     
     /// The name of the event, alphanumeric characters, dashes and spaces are allowed.
-    open let eventName: String
+    let eventName: String
     
     /// The properties to send with the event
-    open let properties: [String: Any]?
+    let properties: [String: Any]?
     
     /// Creates an event with the given name and properties.
     ///
