@@ -1,6 +1,6 @@
 
 language: swift
-osx_image: xcode9.4
-xcode_sdk: iphonesimulator11.4
+osx_image: xcode10.1
+xcode_sdk: iphonesimulator12.0
 script:
-- xcodebuild clean build test -project Trekker.xcodeproj -scheme Trekker -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4'
+- xcodebuild clean build test -project Trekker.xcodeproj -scheme Trekker -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.0'
