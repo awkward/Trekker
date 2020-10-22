@@ -18,7 +18,7 @@ public final class Trekker: NSObject {
     
     //MARK: - Public configurable or readable variables
     
-    /// If the Trekker itself should handle sesstion state updates automaticlly.
+    /// If the Trekker itself should handle session state updates automatically.
     ///
     /// - important: If this is disbale, you are responsible to call the following methods yourself:
     /// - `func startTracking()`
@@ -70,6 +70,15 @@ public final class Trekker: NSObject {
             NotificationCenter.default.addObserver(self, selector: #selector(Trekker.resumeTracking(_:)), name: UIApplication.didBecomeActiveNotification, object: nil)
             NotificationCenter.default.addObserver(self, selector: #selector(Trekker.endTracking(_:)), name: UIApplication.willTerminateNotification, object: nil)
         }
+    }
+
+    /// Enables/disables tracking within all registered services.
+    /// This method can be used if Tracking is opt-in for legal reasons.
+    /// Each service should respect this setting individually using the optional `setTrackingEnabled(_:)` method.
+    ///
+    /// - Parameter enabled: Whether or not tracking should be enabled.
+    public func setTrackingEnabled(_ enabled: Bool) {
+        services.forEach { $0.setTrackingEnabled(enabled) }
     }
     
     // MARK: - Session state
