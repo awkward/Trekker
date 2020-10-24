@@ -38,6 +38,9 @@ public protocol TrekkerService {
     
     /// Called when the Trekker has been stopped using `func stopTracking()`. Some services can use this to end a session.
     func stop()
+
+    /// Called when Tracking is opt-in to enable/disable tracking.
+    func setTrackingEnabled(_ enabled: Bool)
 }
 
 public extension TrekkerService {
@@ -55,6 +58,10 @@ public extension TrekkerService {
     }
     
     func stop() {
+        // Empty implementation to make the implementation optional.
+    }
+
+    func setTrackingEnabled(_ enabled: Bool) {
         // Empty implementation to make the implementation optional.
     }
 }
